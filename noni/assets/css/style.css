@@ -1,0 +1,171 @@
+body {
+  background-image: url(/assets/images/IMG_8882.JPG);
+  background-repeat: no-repeat;
+  background-size: top;
+}
+
+.navbar {
+  margin: 0 auto;
+  width: 1000px;
+  padding-top: 100px;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: right;
+}
+
+.navbar ul li {
+  float: none;
+  display: inline-block;
+}
+
+.navbar ul li:nth-child(1) {
+  float: left;
+}
+.navbar ul li:nth-child(2) {
+  float: left;
+}
+.navbar ul li:nth-child(3) {
+  float: left;
+}
+
+.navbar ul li a {
+  color: white;
+  font-size: 100%;
+  display: block;
+  padding: 10px 20px;
+  font-family: "Luckiest Guy", cursive;
+}
+
+.navbar ul li a:hover {
+  color: black;
+}
+
+.logoarea {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  content: "";
+  margin-left: -150px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+#mainmenu {
+  width: 100%;
+  position: relative;
+  padding-top: 100px;
+}
+
+.greeting {
+  height: 365px;
+  background: none;
+  margin-top: 150px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.greeting2 {
+  text-align: center;
+  color: whitesmoke;
+  font-size: 50px;
+  font-family: "Luckiest Guy", cursive;
+  padding-bottom: 20px;
+
+  margin-top: -100px;
+}
+
+.nonie {
+  text-align: center;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 200px;
+  margin-top: 0%;
+  color: whitesmoke;
+  padding-top: 115px;
+}
+
+.display1 {
+  background-image: url(/assets/images/IMG_8882.JPG);
+  margin-top: 70px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 100px;
+  height: 750px;
+  width: 85%;
+  border: 5px solid rgb(218, 116, 8);
+}
+
+.display2 {
+  background-image: url(/assets/images/IMG_8884.JPG);
+  margin-top: 70px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 100px;
+  height: 750px;
+  width: 85%;
+  border: 5px solid rgb(218, 116, 8);
+  padding: 0;
+}
+
+.registerbtn,
+.login {
+  border-radius: 25px;
+  border: 1px solid white;
+  background: none;
+  color: beige;
+
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  margin: -100px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+}
+
+.login {
+  margin-left: 5%;
+}
+.wrapper .display1 .welc {
+  padding-left: 100px;
+}
+
+.wrapper .display2 .welc2 {
+  width: 600px;
+  padding-left: 50px;
+}
+
+.text1 {
+  padding-left: 10px;
+  padding-top: 100px;
+  color: white;
+  font-size: 40px;
+  font-family: "Luckiest Guy", cursive;
+}
+
+.text2 {
+  padding-left: 10px;
+  padding-bottom: 200px;
+  color: white;
+  font-size: 70px;
+  font-family: "Luckiest Guy", cursive;
+  float: left;
+  margin-right: 135px;
+  padding: 20px;
+  margin-top: 90px;
+}
+
+.welc2 p {
+  width: 57%;
+  padding: 25px;
+  color: white;
+  font-size: 20px;
+  margin-top: -50px;
+}
