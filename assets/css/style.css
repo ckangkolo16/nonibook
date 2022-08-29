@@ -1,0 +1,342 @@
+body {
+  background-image: url(/assets/images/IMG_8882.JPG);
+  background-repeat: no-repeat;
+  background-size: top;
+}
+
+/* WRAPPER */
+.wrapper .display1 .welc {
+  padding-left: 100px;
+}
+
+.wrapper .display2 .welc2 {
+  width: 600px;
+  padding-left: 50px;
+}
+
+/*HIDE CLASS*/
+.hide {
+  display: none;
+}
+
+/*ANIMATED NAVBAR*/
+nav {
+  position: absolute;
+  top: -29px;
+  left: 0;
+  z-index: 10;
+}
+
+nav ul {
+  list-style: none;
+  width: 150px;
+  background-color: black;
+  opacity: 0.5;
+  padding: 27px 0px;
+  height: 85vh;
+  clip-path: circle(10% at 10% 5%);
+}
+nav ul:hover {
+  clip-path: circle(100% at -45% 10%);
+}
+
+nav ul .animnavbar {
+  width: 48px;
+  height: 40px;
+  position: relative;
+  margin-bottom: 24px;
+  margin-left: 10px;
+}
+
+nav ul .animnavbar span {
+  position: absolute;
+  left: 0;
+  background-color: white;
+  padding: 2px;
+  width: 48px;
+  border-radius: 2px;
+}
+
+nav .animnavbar span:nth-child(1) {
+  top: -8px;
+  width: 10px;
+}
+nav .animnavbar span:nth-child(2) {
+  top: 6px;
+  width: 20px;
+}
+nav .animnavbar span:nth-child(3) {
+  bottom: 17px;
+  width: 30px;
+}
+
+nav ul.active .animnavbar span:nth-child(1) {
+  top: 0px;
+  left: 23px;
+  width: 4px;
+  height: 40px;
+}
+
+nav ul.active .animnavbar span:nth-child(2) {
+  left: 5px;
+  width: 40px;
+}
+
+nav ul.active .animnavbar span:nth-child(3) {
+  padding: 0px;
+  width: 0px;
+}
+
+nav ul.active .animnavbar {
+  transform: rotateZ(45deg);
+}
+
+nav ul li {
+  padding: 10px 12px;
+  color: white;
+  text-transform: uppercase;
+}
+
+nav ul li:hover {
+  background-color: green;
+  padding-left: 56px;
+}
+
+/* NAV BAR*/
+.navbar {
+  position: relative;
+  top: -143px;
+  bottom: 0px;
+  left: -27px;
+  right: 0px;
+
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: right;
+}
+
+.navbar ul li {
+  float: none;
+  display: inline-block;
+}
+
+.navbar ul li:nth-child(1) {
+  float: left;
+}
+.navbar ul li:nth-child(2) {
+  float: left;
+}
+.navbar ul li:nth-child(3) {
+  float: left;
+}
+
+.navbar ul li a {
+  color: white;
+  font-size: 100%;
+  display: block;
+  padding: 10px 20px;
+  font-family: "Luckiest Guy", cursive;
+}
+
+.navbar ul li a:hover {
+  color: black;
+}
+
+/* LOGO AREA*/
+
+.logoarea {
+  position: relative;
+  z-index: 9;
+  width: 257px;
+  height: 254px;
+
+  left: 50%;
+  top: 0;
+  content: "";
+  margin-left: -150px;
+  text-align: center;
+}
+
+#mainmenu {
+  width: 100%;
+  position: relative;
+}
+
+/* NONI-ESHE an easy to use online baby-journal */
+.greeting {
+  position: relative;
+  height: 69px;
+  background: none;
+  margin-top: 150px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.greeting2 {
+  position: relative;
+  text-align: center;
+  color: whitesmoke;
+  font-size: 50px;
+  font-family: "Luckiest Guy", cursive;
+  top: -401px;
+}
+
+.greeting2 h4 {
+  position: relative;
+  left: -44px;
+  right: -27px;
+  top: 224px;
+}
+
+.nonie {
+  position: relative;
+  top: -242px;
+  left: -32px;
+  height: 201px;
+  width: 100%;
+  text-align: center;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 200px;
+
+  color: whitesmoke;
+}
+
+/* BACKGROUND PICTURE DISPLAY */
+.display1 {
+  position: relative;
+  background-image: url(/assets/images/IMG_8882.JPG);
+  margin-top: 70px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 100px;
+  top: -168px;
+  height: 750px;
+  width: 85%;
+  border: 5px solid rgb(218, 116, 8);
+}
+.text1 {
+  padding-left: 10px;
+  padding-top: 100px;
+  color: white;
+  font-size: 40px;
+  font-family: "Luckiest Guy", cursive;
+}
+.display2 {
+  position: relative;
+  top: -168px;
+  background-image: url(/assets/images/IMG_8884.JPG);
+  margin-top: 70px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 100px;
+  height: 750px;
+  width: 85%;
+  border: 5px solid rgb(218, 116, 8);
+  padding: 0;
+}
+
+.text2 {
+  padding-left: 10px;
+  padding-bottom: 200px;
+  color: white;
+  font-size: 70px;
+  font-family: "Luckiest Guy", cursive;
+  float: left;
+  margin-right: 135px;
+  padding: 20px;
+  margin-top: 90px;
+}
+
+/* BUTTONS*/
+.registerbtn,
+.login {
+  border-radius: 25px;
+  border: 1px solid white;
+  background: none;
+  color: beige;
+  border-color: orange;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  margin: -100px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+}
+
+.login,
+.registerbtn {
+  margin-left: 5%;
+}
+
+.login:hover,
+.registerbtn:hover {
+  box-shadow: 5px;
+  background-color: orange;
+  opacity: 0.5;
+  text-decoration-color: white;
+}
+
+.login a,
+.registerbtn a {
+  color: white;
+  text-decoration: none;
+}
+
+.btn {
+  position: relative;
+  background: none;
+
+  font-size: 18px;
+  color: white;
+  width: 75px;
+  height: 40px;
+  border-radius: 25px;
+  font-family: "Luckiest Guy", cursive;
+
+  left: 20px;
+
+  bottom: 30px;
+  top: -17px;
+}
+
+.welc2 p {
+  width: 57%;
+  padding: 25px;
+  color: white;
+  font-size: 20px;
+  margin-top: -50px;
+}
+
+#loginarea {
+  position: relative;
+  height: 70px;
+  background-color: none;
+  width: 700px;
+
+  top: 50%;
+  left: 36%;
+
+  color: black;
+}
+
+.textbox {
+  display: inline-block;
+  width: 100px;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 10px 45px;
+  margin: 5px 10px;
+}
+
+.secretlog {
+  text-decoration: none;
+}

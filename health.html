@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/health.css" />
+    <script src="https://kit.fontawesome.com/a86bdd204a.js" crossorigin="anonymous"></script>
+    <script type="text/JavaScript" src=" https://MomentJS.com/downloads/moment.js"></script>
+    <title>Baby Portal</title>
+</head>
+
+<body>
+    <div class="main">
+        <nav class="container">
+            <nav class="top">
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Docs</a></li>
+                    <li><a href="#">Misc </a></li>
+
+
+                </ul>
+
+            </nav>
+            <nav class="bottom">
+                <ul>
+                    <li>
+                        <a href="profile.html">
+                            <span class="icon bottomicon"> <i class="fa fa-user fa-lg"></i></span>
+                            <span class="title bottom-title">Profile</span></a>
+                    </li>
+
+                    <li>
+                        <a href="gallery.html">
+                            <span class="icon bottomicon"> <i class="fa fa-image fa-lg"></i>
+                            </span>
+                            <span class="title bottom-title">Gallery</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon bottomicon"><i class="fa fa-camera-retro" aria-hidden="true"></i>
+                            </span>
+                            <span class="title bottom-title">Memories</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="milestones.html">
+                            <span class="icon bottomicon"><i class="fa fa-hourglass-half" aria-hidden="true"></i></span>
+                            <span class="title bottom-title">Milestones</span>
+                        </a>
+                    </li>
+
+
+
+
+
+                    <li>
+                        <a href="health.html">
+                            <span class="icon bottomicon"><i class="fa fa-user-md" aria-hidden="true"></i>
+
+                            </span>
+                            <span class="title bottom-title">Health</span>
+                        </a>
+                    </li>
+
+
+
+
+
+
+                    <li>
+                        <a href="#">
+                            <span class="icon bottomicon"><i class="fa fa-envelope" aria-hidden="true"></i>
+                            </span>
+                            <span class="title bottom-title">Messages</span>
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#">
+                            <span class="icon bottomicon"><i class="fa fa-cogs" aria-hidden="true"></i>
+                            </span>
+                            <span class="title bottom-title">Settings</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span class="icon logout bottomicon"><i class="fas fa-sign-out-alt fa-lg"></i>
+
+                            </span>
+                            <span class="title bottom-title">Logout</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+        </nav>
+
+
+        <div class="leftnav">
+
+            <ul>
+                <li>
+                    <a href="profile.html">
+                        <span class="icon"> <i class="fa fa-user fa-lg"></i></span>
+                        <span class="title">Profile</span></a>
+                </li>
+
+                <li>
+                    <a href="gallery.html">
+                        <span class="icon"> <i class="fa fa-image fa-lg"></i>
+                        </span>
+                        <span class="title">Gallery</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="milestones.html">
+                        <span class="icon"><i class="fa fa-hourglass-half" aria-hidden="true"></i></span>
+                        <span class="title">Milestones</span>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-camera-retro" aria-hidden="true"></i>
+                        </span>
+                        <span class="title">Memories</span>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="health.html">
+                        <span class="icon"><i class="fa fa-user-md" aria-hidden="true"></i>
+
+                        </span>
+                        <span class="title">Health</span>
+                    </a>
+                </li>
+
+
+
+
+
+
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i>
+                        </span>
+                        <span class="title">Messages</span>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-cogs" aria-hidden="true"></i>
+                        </span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon logout"><i class="fas fa-sign-out-alt fa-lg"></i>
+
+                        </span>
+                        <span class="title">Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="cards">
+
+            <div class="card1 profile" id="profilebtn">
+
+                <span class="icon"> <i class="fa fa-user fa-lg"></i></span>
+
+                <p class="protitle">PROFILE</p>
+
+
+            </div>
+            <div class="card2 appt" id="apptbtn">
+
+                <span class="icon"><i class="fa-solid fa-calendar-days"></i></span>
+                <p class="title">APPTS</p>
+            </div>
+            <div class="card3 meds" id="medbtn">
+
+                <span class="icon"><i class="fa-solid fa-prescription-bottle"></i></span>
+                <p class="title">MEDS</p>
+
+            </div>
+            <div class="card4 docs">
+
+                <span class="icon"><i class="fa-solid fa-book-medical"></i></span>
+                <p class="doctitle">DOCS</p>
+            </div>
+
+            <div class="card5 immun">
+
+                <span class="icon"><i class="fa-solid fa-syringe"></i></span>
+                <p class="title">IMM</p>
+            </div>
+
+            <div class="card6 notes">
+
+                <span class="icon"><i class="fa-solid fa-notes-medical"></i></i></span>
+                <p class="notestitle">NOTES</p>
+            </div>
+
+            <div class="card7 charts">
+
+                <span class="icon"> <i class="fa-solid fa-chart-column"></i></span>
+                <p class="protitle">CHARTS</p>
+
+            </div>
+            <div class="card8 bills">
+
+                <span class="icon"> <i class="fa-solid fa-wallet"></i></span>
+                <p class="protitle">BILLS</p>
+
+            </div>
+            <div class="card9 misc">
+
+                <span class="icon edit"> <i class="fa-solid fa-laptop-medical"></i></span>
+                <p class="protitle editpara ">EDIT</p>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="appointments" id="appointments">
+            <button id="exitappt">x</button>
+
+            <section class="apptsch">
+
+                <h2>SCHEDULE APPOINTMENTS</h2>
+
+                <label for="docname">Doctor:</label>
+                <input type="text" name="docname" id="docname" placeholder="Doctor's name">
+                <label for="Address">Address:</label>
+                <input type="text" name="address" id="address" required>
+
+                <label for="city">City:</label>
+                <input type="text" name="city" id="city">
+
+                <label for="state">State:</label>
+                <input type="text" name="state" id="state">
+
+                <label for="username">Zipcode:</label>
+                <input type="number" name="zipcode" id="zipcode">
+
+
+                <label for="phone">Phone number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+                <label for="appt">Choose a time:</label>
+                <input type="time" id="time" name="time">
+
+                <label for="symptoms" id="labelreason">Reason:</label>
+                <textarea id="reason" name="reason" rows="4" cols="50"></textarea>
+
+                <button class="schedule" id="schedule">schedule</button>
+
+
+
+
+            </section>
+
+            <section class="apptdisp" id="mainapptdisp">
+
+                <div class="test1" id="apptdisp"></div>
+
+                <div class="displaybox">
+                    <H4 id="drName"> </H4>
+                    <p id="strName"> </p>
+                    <p id="ctyName"> </p>
+                    <p id="stName"> </p>
+                    <p id="zipNum"> </p>
+                    <p id="phoneNum"> </p>
+                    <h2 id="apptDate"> </h2>
+                    <h3 id="apptTime"> </h3>
+                    <br>
+                    <p id="rsntxt"> </p>
+
+                </div>
+
+
+            </section>
+
+        </div>
+
+        <div class="profile-container" id="profile">
+
+
+            <div class="profile-card">
+                <button id="exitprofbtn">X</button>
+                <img src="./assets/images/pfp1.jpg" alt="">
+                <h1 class="firstname">Eliora </h1>
+                <h1 class="lastname"> Nkolo-Kangkolo</h1>
+
+                <div class="dob">
+                    <h6>DOB</h6>
+                    <p>9-12-19</p>
+                    <h6>Weight</h6>
+                    <p>27.6 lbs</p>
+                    <h6>Height</h6>
+                    <p>5'5"</p>
+                </div>
+                <div class="vl"></div>
+                <div class="parent1">
+                    <h6>Contact1</h6>
+                    <h5>Dad</h5>
+                    <h6>Address1</h6>
+                    <p>123 Kansas City</p>
+                    <p>Kansas City, MO, 64086</p>
+
+                    <h6>Mobile Phone #</h6>
+                    <p>(555)555-5555</p>
+                    <h6>Home Phone #</h6>
+                    <p>(555)555-5555</p>
+                    <h6>Work Phone #</h6>
+                    <p>(555)555-5555</p>
+                    <h6>Emergency Contact</h6>
+                    <p>Grandma</p>
+                    <h6>Emergency Phone #</h6>
+                    <p>(555)555-5555</p>
+
+                </div>
+                <div class="vl2"></div>
+
+
+
+
+                <div class="parent2">
+                    <h6>Contact1</h6>
+                    <h5>Dad</h5>
+                    <h6>Address2</h6>
+                    <p>123 Kansas City</p>
+                    <p>Kansas City, MO, 64086</p>
+
+                    <h6>Mobile Phone #</h6>
+                    <p>(555)555-5555</p>
+                    <h6>Home Phone #</h6>
+                    <p>(555)555-5555</p>
+                    <h6>Work Phone #</h6>
+                    <p>(555)555-5555</p>
+                    <h6>Emergency Contact</h6>
+                    <p>Grandma</p>
+                    <h6>Emergency Phone #</h6>
+
+                </div>
+
+
+
+
+            </div>
+
+            <div class="vitals">
+                <h3 class="vitalstitle">Vitals</h3>
+                <hr class="line1">
+
+                <div class="bp">
+                    <span class="hearticon"><i class="fa-solid fa-heart"></i></span>
+                    <p class="bp-para">Blood Pressure</p>
+                    <h2 class="bp-h2">121/75</h2>
+                </div>
+
+                <div class="vl3"></div>
+
+                <div class="pulse"> <span class="pulseicon"><i class="fa-solid fa-heart-pulse"></i></span>
+                    <p class="pulse-paraname">Pulse</p>
+                    <h2 class="pulse-h2">67</h2>
+                    <p class="pulse-parabpm">BPM</p>
+                </div>
+
+
+
+            </div>
+
+
+
+            <div class="pcp">
+                <h3 class="physiciantitle">Physicians</h3>
+                <hr class="line2">
+                <ul>
+                    <li>
+                        <p>Dr. Michael Walker</p>
+                        <p>123 Main Street, Kansas City, MO 64086</p>
+                        <p>(816)555-5555</p>
+                    </li>
+                    <br>
+                    <li>
+                        <p>Dr. Michael Walker</p>
+                        <p>123 Main Street, Kansas City, MO 64086</p>
+                        <p>(816)555-5555</p>
+                    </li>
+
+                </ul>
+
+
+
+            </div>
+
+            <div class="labs">
+                <h3 class="labstitle">Lab Results</h3>
+                <span class="ellipsis"><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                <hr class="line3">
+                <div class="labresult">
+                    <span class="labnotes"><i class="fa-solid fa-note-sticky"></i></span>
+                    <p class="labdr">X-ray - Dr. Walker</p>
+                    <p class="labdate">05/06/2021</p>
+
+                </div>
+                <div class="labresult">
+                    <span class="labnotes"><i class="fa-solid fa-note-sticky"></i></span>
+                    <p class="labdr">X-ray - Dr. Walker</p>
+                    <p class="labdate">05/06/2021</p>
+
+                </div>
+                <div class="labresult">
+                    <span class="labnotes"><i class="fa-solid fa-note-sticky"></i></span>
+                    <p class="labdr">X-ray - Dr. Walker</p>
+                    <p class="labdate">05/06/2021</p>
+
+                </div>
+                <div class="labresult">
+                    <span class="labnotes"><i class="fa-solid fa-note-sticky"></i></span>
+                    <p class="labdr">X-ray - Dr. Walker</p>
+                    <p class="labdate">05/06/2021</p>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="allergies">
+                <h3 class="allergytitle">Allergies</h3>
+                <hr>
+                <ul>
+                    <li>peanuts</li>
+                    <li>penicillin</li>
+                    <li>carrots</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="medications" id="medications">
+            <button id="exitmedbtn">x</button>
+            <div class="med-card">
+                <h2>Add Medications</h2>
+
+                <form>
+
+                    <label for="medbrand">Brand name:</label>
+                    <input type="text" id="medbrand" name="medbrand">
+                    <label for="medgen">Generic name:</label>
+                    <input type="text" id="medgen" name="medgen">
+                    <label for="strength">Strength:</label>
+                    <input type="text" id="strength" name="strength">
+                    <label for="drsname">Prescribed By:</label>
+                    <input type="text" id="prescribedby" name="prescribedby">
+                    <label for="for">Reason:</label>
+                    <input type="text" id="for" name="for">
+
+                    <p><label for="directions">Directions:</label></p>
+                    <textarea id="directions" class="directions" name="directions" rows="4" cols="50"> </textarea>
+                    <br>
+                    <button>Add</button>
+
+                </form>
+
+
+
+
+
+
+            </div>
+            <div class="med-card2">
+                <h2>Medication List</h2>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <script src="./assets/js/health.js"></script>
+</body>
+
+</html>

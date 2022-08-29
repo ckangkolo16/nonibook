@@ -1,0 +1,884 @@
+/*Importing Font - POPPINS*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+/*****/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  /* background-color: rgb(223, 244, 251); */
+  background-color: #dff4fb;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 300;
+}
+
+/************************HEADER******************************************/
+header {
+  background: #2980b9;
+
+  display: flex;
+  height: 94px;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 30px 10%; */
+}
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/************************HEADER******************************************/
+
+/************************NAV BAR(STARTS)*****************************/
+nav {
+  height: 57px;
+  width: 100%;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 30px;
+  padding-top: 25px;
+  position: relative;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-family: cursive;
+}
+
+nav a:hover {
+  color: white;
+}
+
+.bottomnav {
+  position: relative;
+  top: 0px;
+  height: 37px;
+  background-color: skyblue;
+  width: 100%;
+}
+
+.bottomnav ul {
+  position: relative;
+  top: 6px;
+
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.bottomnav ul li {
+  margin-left: 60px;
+}
+
+.bottomnav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+/*********************************/
+.active,
+.bottomnav ul li a:hover {
+  background-color: #2980b9;
+
+  border-radius: 4px;
+  padding: 2px;
+}
+
+.years {
+  display: none;
+  position: relative;
+
+  top: 13px;
+  height: 85px;
+  width: 85px;
+  z-index: 6;
+}
+
+.years ul {
+  position: relative;
+  left: -50%;
+  top: -5%;
+}
+
+.bottomnav ul li:hover .years {
+  display: block;
+  position: absolute;
+  background-color: #2980b9;
+  margin-top: 15px;
+  margin-left: -15px;
+}
+
+.bottomnav ul li:hover .years ul {
+  display: block;
+  margin: 10px;
+}
+
+.bottomnav ul li:hover .years ul li {
+  width: 100px;
+  padding: 0px;
+
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+
+.bottomnav ul li:hover .years ul li:last-child {
+  border-bottom: none;
+}
+
+.bottomnav ul li:hover .years ul li:hover {
+  color: #34db95;
+}
+
+/**/
+
+.albumname {
+  display: none;
+  position: relative;
+  top: 13px;
+  height: 175px;
+  width: 115px;
+  z-index: 6;
+}
+
+.albumname ul {
+  position: relative;
+  left: -55%;
+  top: -5%;
+}
+
+.bottomnav ul li:hover .albumname {
+  display: block;
+  position: absolute;
+  background-color: #2980b9;
+  margin-top: 15px;
+  margin-left: -15px;
+}
+
+.bottomnav ul li:hover .albumname ul {
+  display: block;
+  margin: 10px;
+}
+
+.bottomnav ul li:hover .albumname ul li {
+  width: 100px;
+  padding: 0px;
+  color: white;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+
+.bottomnav ul li:hover .albumname ul li:last-child {
+  border-bottom: none;
+}
+
+.bottomnav ul li:hover .albumname ul li:hover {
+  background-color: #2980b9;
+  border-radius: 4px;
+  padding: 2px;
+}
+
+/**/
+
+.vids {
+  display: none;
+  position: relative;
+  top: 13px;
+  height: 175px;
+  width: 120px;
+  z-index: 6;
+}
+
+.vids ul {
+  position: relative;
+  left: -55%;
+  top: -5%;
+}
+
+.bottomnav ul li:hover .vids {
+  display: block;
+  position: absolute;
+  background-color: #2980b9;
+  margin-top: 15px;
+  margin-left: -15px;
+}
+
+.bottomnav ul li:hover .vids ul {
+  display: block;
+  margin: 10px;
+}
+
+.bottomnav ul li:hover .vids ul li {
+  width: 100px;
+  padding: 0px;
+  color: white;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+
+.bottomnav ul li:hover .vids ul li:last-child {
+  border-bottom: none;
+}
+
+.bottomnav ul li:hover .vids ul li:hover {
+  background-color: #2980b9;
+  border-radius: 4px;
+  padding: 2px;
+}
+
+/**/
+
+.months {
+  display: none;
+  position: relative;
+  top: 13px;
+  height: 305px;
+  width: 150px;
+  z-index: 6;
+}
+
+.months ul {
+  position: relative;
+  left: -42%;
+  top: 0%;
+}
+
+.bottomnav ul li:hover .months {
+  display: block;
+  position: absolute;
+  background-color: #2980b9;
+  margin-top: 15px;
+  margin-left: -15px;
+}
+
+.bottomnav ul li:hover .months ul {
+  display: block;
+  margin: 10px;
+}
+
+.bottomnav ul li:hover .months ul li {
+  width: 100px;
+  padding: 0px;
+  color: white;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+
+.bottomnav ul li:hover .months ul li:last-child {
+  border-bottom: none;
+}
+
+.bottomnav ul li:hover .months ul li:hover {
+  background-color: #2980b9;
+  border-radius: 4px;
+  padding: 2px;
+}
+
+/**/
+.days {
+  display: none;
+  position: relative;
+  top: 13px;
+  height: 180px;
+  width: 150px;
+  z-index: 6;
+}
+
+.days ul {
+  position: relative;
+  left: -42%;
+  top: 0%;
+}
+
+.bottomnav ul li:hover .days {
+  display: block;
+  position: absolute;
+  background-color: #2980b9;
+  margin-top: 15px;
+  margin-left: -15px;
+}
+
+.bottomnav ul li:hover .days ul {
+  display: block;
+  margin: 10px;
+}
+
+.bottomnav ul li:hover .days ul li {
+  width: 100px;
+  padding: 0px;
+  color: white;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+
+.bottomnav ul li:hover .days ul li:last-child {
+  border-bottom: none;
+}
+
+.bottomnav ul li:hover .days ul li:hover {
+  background-color: #2980b9;
+  border-radius: 4px;
+  padding: 2px;
+}
+
+/**/
+
+.ages {
+  display: none;
+  position: relative;
+
+  top: 13px;
+  height: 85px;
+  width: 70px;
+  z-index: 6;
+}
+
+.ages ul {
+  position: relative;
+  left: -55%;
+  top: -5%;
+}
+
+.bottomnav ul li:hover .ages {
+  display: block;
+  position: absolute;
+  background-color: #2980b9;
+
+  margin-top: 15px;
+  margin-left: -15px;
+}
+
+.bottomnav ul li:hover .ages ul {
+  display: block;
+  margin: 10px;
+}
+
+.bottomnav ul li:hover .ages ul li {
+  width: 100px;
+  padding: 0px;
+
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+
+.bottomnav ul li:hover .ages ul li:last-child {
+  border-bottom: none;
+}
+
+.bottomnav ul li:hover .ages ul li:hover {
+  color: #34db95;
+}
+
+/* .ages ul li a:hover {
+  background-color: skyblue;
+  border-radius: 6px;
+} */
+
+/**********DEFAULT RESPONSIVE NAVBAR(STARTS)*********/
+
+.navigation:hover {
+  width: 165px;
+}
+.navigation {
+  position: fixed;
+
+  margin-top: 0px;
+  width: 60px;
+  height: 100%;
+  background: #34db95;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.navigation ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.navigation ul li {
+  position: relative;
+  width: 100%;
+  list-style: none;
+}
+
+.navigation ul li:hover {
+  background: #2980b9;
+}
+
+.navigation ul li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navigation ul li a .icon {
+  position: relative;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.navigation ul li a .icon .fa {
+  font-size: 24px;
+}
+
+.navigation ul li a .title {
+  position: relative;
+  display: block;
+  padding: 0 10px;
+  height: 60px;
+  font-family: cursive;
+  line-height: 60px;
+  text-align: start;
+  white-space: nowrap;
+}
+/******************DEFAULT RESPONSIVE NAV BAR(END)******************/
+
+/******MAIN CONTAINER WHICH CONTAINS ALL PICS GALLERY*/
+.maincontainer {
+  position: relative;
+  left: 17%;
+  top: 12px;
+  /* background-color: orange; */
+  display: flex;
+  flex-wrap: wrap;
+  width: 1086px;
+  height: 100%;
+}
+
+.maincontainer div {
+  margin-bottom: 50px;
+}
+
+.thumbnail {
+  /* all pics */
+  height: 226px;
+  filter: grayscale(0);
+}
+
+/******CONTROL BOXDIV CONTAINS DISPLAYBOX & UPLOADBOX*******************/
+.controlbox {
+  position: relative;
+  display: flex;
+  left: 17%;
+  top: 10px;
+  height: 98px;
+  width: 1085px;
+  /* background-color: red; */
+}
+
+.uploadbox {
+  position: relative;
+  height: 90px;
+  width: 542px;
+  background-color: #2980b9;
+  margin-left: 7px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.displaybox {
+  position: relative;
+  height: 90px;
+  width: 524px;
+  background-color: #2980b9;
+  margin-left: 7px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+#files {
+  position: absolute;
+  top: 20%;
+  left: 55%;
+}
+
+#albumsform {
+  position: absolute;
+  top: 22%;
+  left: 3%;
+}
+
+.caption {
+  /* background-color: pink; */
+  display: flex;
+  top: 65%;
+  width: 317px;
+  height: 55px;
+  position: relative;
+  left: 55%;
+}
+
+.caption h4 {
+  margin-left: 15px;
+  position: relative;
+  top: -6px;
+}
+
+.gal-cog {
+  position: absolute;
+  left: 95%;
+  bottom: 15%;
+}
+
+#color,
+#blknwht {
+  display: none;
+}
+
+#lightbulb {
+  color: yellow;
+  position: absolute;
+  left: 95%;
+  top: 0;
+  font-size: 20px;
+}
+
+/******DYNAMICALLY CREATED IN JS - TO DELETE PICS*/
+.delete {
+  display: none;
+}
+
+.delete:hover {
+  color: white;
+}
+
+#del {
+  position: absolute;
+  top: 7%;
+  right: 11%;
+  background: none;
+  border: none;
+}
+
+.ellipsis {
+  position: absolute;
+  right: 1%;
+}
+
+.ellipsis:hover {
+  color: white;
+  font-size: 25px;
+}
+
+#delbtn {
+  display: none;
+  position: sticky;
+  left: 13%;
+  top: 49%;
+  width: 40px;
+  height: 30px;
+  background-color: red;
+  z-index: 6;
+  border-radius: 4px 4px 4px 4px;
+}
+
+/******imgcontainer/PHOTOS GALLERY*/
+.imgcontainer {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 1088px;
+  background-color: lightblue;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 20px 20px 20px 20px;
+  padding: 10px 6px 7px 13px;
+}
+
+.imgcontainer h6 {
+  width: 100%;
+  margin-left: 9px;
+}
+
+.imgcontainer div {
+  background-color: skyblue;
+  position: relative;
+  padding: 5px;
+  margin-left: 4px;
+}
+
+/******BIRTHDAY GALLERY*/
+.birthday {
+  position: relative;
+  left: 0%;
+  top: 0px;
+  height: 100%;
+  width: 1088px;
+  background-color: lightblue;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 35px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.birthday h6 {
+  width: 100%;
+  margin-left: 24px;
+}
+
+.birthday div {
+  background-color: skyblue;
+  position: relative;
+  padding: 5px;
+  margin-left: 6px;
+}
+
+/******BIRTHDAY GALLERY*/
+.first-year {
+  position: relative;
+  left: 0%;
+  top: 0px;
+  height: 100%;
+  width: 1088px;
+  background-color: lightblue;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 35px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.first-year h6 {
+  width: 100%;
+  margin-left: 24px;
+}
+
+.first-year div {
+  background-color: skyblue;
+  position: relative;
+  padding: 5px;
+  margin-left: 6px;
+}
+
+/******HOLIDAYS GALLERY*/
+.holidays {
+  position: relative;
+  left: 0%;
+  top: 0px;
+  height: 100%;
+  width: 1088px;
+  background-color: lightblue;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 35px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.holidays h6 {
+  width: 100%;
+  margin-left: 24px;
+}
+
+.holidays div {
+  background-color: skyblue;
+  position: relative;
+  padding: 5px;
+  margin-left: 6px;
+}
+
+/******VIDEOS GALLERY*/
+.videos {
+  position: relative;
+  left: 0%;
+  top: 0px;
+  height: 100%;
+  width: 1088px;
+  background-color: lightblue;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 35px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.videos h6 {
+  width: 100%;
+  margin-left: 24px;
+}
+
+.videos div {
+  background-color: skyblue;
+  position: relative;
+  padding: 5px;
+  margin-left: 6px;
+}
+
+/******LABOR & DELIVERY GALLERY*/
+.labor {
+  position: relative;
+  left: 0%;
+  top: 0px;
+  height: 100%;
+  width: 1088px;
+  background-color: lightblue;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 35px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.labor h6 {
+  width: 100%;
+  margin-left: 24px;
+}
+
+.labor div {
+  background-color: skyblue;
+  position: relative;
+  padding: 5px;
+  margin-left: 6px;
+}
+
+/******TRIPS & VACATIONS GALLERY*/
+.trips {
+  position: relative;
+  left: 0%;
+  top: 0px;
+  height: 100%;
+  width: 1088px;
+  background-color: lightblue;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 35px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.trips h6 {
+  width: 100%;
+  margin-left: 24px;
+}
+
+.trips div {
+  background-color: skyblue;
+  position: relative;
+  padding: 5px;
+  margin-left: 6px;
+}
+
+/******Lessons GALLERY*/
+.lessons {
+  position: relative;
+  left: 0%;
+  top: 0px;
+  height: 100%;
+  width: 1088px;
+  background-color: lightblue;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 35px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.lessons h6 {
+  width: 100%;
+  margin-left: 24px;
+}
+
+.lessons div {
+  background-color: skyblue;
+  position: relative;
+  padding: 5px;
+  margin-left: 6px;
+}
+
+/******Family GALLERY*/
+.family {
+  position: relative;
+  left: 0%;
+  top: 0px;
+  height: 100%;
+  width: 1088px;
+  background-color: lightblue;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 35px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.family h6 {
+  width: 100%;
+  margin-left: 24px;
+}
+
+.family div {
+  background-color: skyblue;
+  position: relative;
+  padding: 5px;
+  margin-left: 6px;
+}
+
+/******TBD GALLERY*/
+
+.misc,
+.milestones,
+.year,
+.month,
+.easter,
+.fathersday,
+.mothersday,
+.age {
+  display: none;
+
+  position: relative;
+  left: 0%;
+  top: 0px;
+  height: 100%;
+  width: 1088px;
+  background-color: red;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 35px;
+}
+
+.misc h6,
+.milestones h6,
+.year h6,
+.month h6,
+.easter h6,
+.mothersday h6,
+.fathersday h6,
+.age h6 {
+  width: 100%;
+  margin-left: 24px;
+}
+
+.misc div,
+.milestones div,
+.year div,
+.month div,
+.easter div,
+.mothersday div,
+.fathersday div,
+.age div {
+  background-color: gray;
+  position: relative;
+  padding: 15px;
+  margin-left: 6px;
+}

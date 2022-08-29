@@ -1,0 +1,844 @@
+* {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  height: 1050px;
+  width: 1346px;
+  background-color: #dff4fb;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: skyblue;
+  height: 105px;
+  width: 100%;
+}
+
+.top {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background-color: #2980b9;
+}
+
+.top ul {
+  display: flex;
+  list-style: none;
+  margin: 2px;
+  justify-content: center;
+}
+
+.top ul li {
+  padding: 17px;
+}
+
+.top ul li a {
+  text-decoration: none;
+  color: white;
+}
+.bottom {
+  bottom: 31px;
+  position: relative;
+  display: flex;
+  height: 21px;
+}
+
+.bottom ul {
+  position: relative;
+  display: flex;
+  list-style: none;
+
+  justify-content: center;
+}
+
+.bottom ul li:hover {
+  position: relative;
+
+  background-color: #2980b9;
+}
+
+.bottom ul li {
+  position: relative;
+  bottom: -56px;
+  left: 97%;
+  height: 0px;
+  padding: -205px;
+}
+
+.bottom ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.bottomicon {
+  position: relative;
+  top: -30px;
+  left: 0px;
+}
+
+/**********************************************************************************/
+.leftnav {
+  position: fixed;
+  margin-top: 100px;
+
+  width: 60px;
+  height: 100%;
+
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.leftnav:hover {
+  width: 180px;
+}
+
+/*NAV BAR HIDDEN*/
+.leftnav ul {
+  display: none;
+  background: #34db95;
+  position: absolute;
+  top: 0;
+  left: -38px;
+  width: 100%;
+}
+
+.leftnav ul li {
+  position: relative;
+  width: 100%;
+  list-style: none;
+}
+
+.leftnav ul li:hover {
+  background-color: #2980b9;
+  padding-left: 25px;
+}
+
+.leftnav ul li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  color: #fff;
+  /*SET*/
+  top: -5px;
+  right: -5px;
+}
+
+.leftnav ul li a .icon {
+  position: relative;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  margin-left: -44px;
+  /*SET*/
+  top: -8px;
+}
+
+.leftnav ul li .icon .fa {
+  font-size: 24px;
+}
+
+.logout {
+  margin-top: 8px;
+  font-size: 24px !important;
+}
+
+.leftnav ul li a .title {
+  position: relative;
+  display: block;
+  left: 34px;
+  padding: 0 10px;
+  height: 60px;
+  font-family: cursive;
+  line-height: 60px;
+  text-align: start;
+  white-space: nowrap;
+  top: 11px;
+}
+
+/******************DEFAULT RESPONSIVE NAV BAR(END)******************/
+
+.cards {
+  position: absolute;
+  background-color: mintcream;
+  width: 261px;
+  height: 261px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 262px;
+  padding: 4px;
+  top: -147px;
+  left: -243px;
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6,
+.card7,
+.card8,
+.card9 {
+  height: 78px;
+  width: 78px;
+  background-color: gray;
+  margin: 5px;
+  margin-left: 3px;
+}
+
+.icon {
+  font-size: 20px;
+  color: white;
+  position: relative;
+  right: -29px;
+  bottom: -15px;
+}
+
+.title {
+  position: relative;
+  top: 24px;
+  left: 14px;
+  color: white;
+}
+.bottom-title {
+  left: -36px;
+  top: -10px;
+}
+.protitle {
+  position: relative;
+  font-size: 13px;
+  top: 25px;
+  left: 11px;
+  color: white;
+}
+
+.edit {
+  position: relative;
+
+  top: 17px;
+  left: 27px;
+  color: white;
+}
+
+.editpara {
+  position: relative;
+  left: 20px;
+}
+
+.doctitle {
+  position: relative;
+  top: 24px;
+  left: 13px;
+  color: white;
+}
+
+.notestitle {
+  position: relative;
+  top: 25px;
+  left: 10px;
+  color: white;
+}
+
+.profile {
+  background-color: red;
+}
+
+.profile:hover {
+  background-color: rgb(212, 0, 0);
+}
+
+.appt {
+  background-color: rgb(239, 239, 9);
+}
+
+.appt:hover {
+  background-color: yellow;
+}
+
+.meds {
+  background-color: rgb(236, 91, 91);
+}
+
+.meds:hover {
+  background-color: red;
+}
+
+.docs {
+  background-color: rgb(90, 146, 7);
+}
+
+.docs:hover {
+  background-color: greenyellow;
+}
+
+.immun {
+  background-color: rgb(12, 12, 143);
+}
+
+.immun:hover {
+  background-color: blue;
+}
+
+.notes {
+  background-color: rgb(91, 15, 91);
+}
+
+.notes:hover {
+  background-color: purple;
+}
+
+.charts {
+  background-color: orangered;
+}
+
+.charts:hover {
+  background-color: orange;
+}
+
+.bills {
+  background-color: lightcoral;
+}
+
+.bills:hover {
+  background-color: rgb(197, 88, 88);
+}
+
+.misc:hover {
+  background-color: darkgrey;
+}
+
+.apptdisp {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  top: -482px;
+  left: 492px;
+  background-color: red;
+  height: 464px;
+  width: 338px;
+  padding: 10px;
+}
+
+.apptsch {
+  position: relative;
+  top: 2px;
+  left: 2px;
+  background-color: mintcream;
+  height: 463px;
+  width: 467px;
+  padding: 10px;
+}
+
+.test1 {
+  position: relative;
+  background-color: white;
+  width: 339px;
+  height: 200px;
+}
+
+.div3 {
+  position: relative;
+  background-color: white;
+  margin-top: 3px;
+  width: 339px;
+  height: 100px;
+}
+
+.div4,
+.div5 {
+  position: relative;
+  background-color: white;
+  margin-left: 3px;
+  width: 168px;
+  height: 100px;
+}
+
+.appointments {
+  display: none;
+  width: 852px;
+  height: 487px;
+  position: relative;
+  background-color: mintcream;
+  left: 313px;
+  bottom: 219px;
+}
+
+#exitappt {
+  position: absolute;
+  height: 22px;
+  width: 28px;
+  z-index: 6;
+  left: 96%;
+  top: 1%;
+}
+
+.profile-container {
+  display: none;
+  width: 1013px;
+  height: 602px;
+  position: relative;
+  background-color: mintcream;
+  border-radius: 6px 6px 6px 6px;
+  left: 305px;
+  bottom: 162px;
+}
+
+#exitprofbtn {
+  font-weight: 800;
+  position: relative;
+  left: 96%;
+  top: 3%;
+  height: 22px;
+  width: 28px;
+  z-index: 6;
+}
+
+.medications {
+  display: none;
+  width: 814px;
+  height: 487px;
+  position: relative;
+  background-color: mintcream;
+  left: 303px;
+  bottom: 219px;
+}
+
+#exitmedbtn {
+  position: absolute;
+  left: 93%;
+  top: 3%;
+  height: 22px;
+  width: 28px;
+  z-index: 6;
+}
+
+.med-card {
+  position: relative;
+  display: block;
+  top: 7px;
+  left: 14px;
+  width: 384px;
+  height: 468px;
+  background-color: whitesmoke;
+  border-radius: 6px 6px 6px 6px;
+}
+
+.med-card2 {
+  position: relative;
+  display: block;
+  top: -460px;
+  left: 412px;
+  width: 384px;
+  height: 468px;
+  background-color: whitesmoke;
+  border-radius: 6px 6px 6px 6px;
+}
+
+.profile-card {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  left: 6px;
+  top: 6px;
+  background-color: mintcream;
+  width: 997px;
+  height: 320px;
+  border-radius: 4px 4px 4px 4px;
+}
+
+.profile-card img {
+  position: relative;
+  left: -16px;
+  top: 2px;
+  height: 133px;
+  width: 133px;
+  border-radius: 100%;
+}
+.dob {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  left: 46px;
+  top: 157px;
+  background-color: whitesmoke;
+  width: 135px;
+  height: 154px;
+  border-radius: 3px 3px 3px 3px;
+}
+
+.parent1 {
+  position: relative;
+  left: 31px;
+  top: 6px;
+  background-color: whitesmoke;
+  width: 241px;
+  height: 307px;
+  border-radius: 3px 3px 3px 3px;
+}
+
+.parent1 h6,
+.parent1 h5,
+.parent1 p,
+.parent2 h6,
+.parent2 h5,
+.parent2 p {
+  margin: 5px;
+}
+
+.dob h6,
+p {
+  margin: 5px;
+}
+
+.parent2 {
+  position: relative;
+  left: 33px;
+  top: 6px;
+  background-color: whitesmoke;
+  width: 241px;
+  height: 307px;
+  border-radius: 3px 3px 3px 3px;
+}
+
+.vl {
+  width: 1px;
+  position: relative;
+  left: 175px;
+  top: 13px;
+  border-left: 1px solid gray;
+  height: 287px;
+}
+
+.vl2 {
+  width: 1px;
+  position: relative;
+  left: 189px;
+  top: 13px;
+  border-left: 1px solid gray;
+  height: 287px;
+}
+
+.vl3 {
+  width: 1px;
+  position: relative;
+  left: 161px;
+  top: -170px;
+  border-left: 1px solid gray;
+  height: 140px;
+}
+
+.profile-card .firstname {
+  position: relative;
+  top: 6px;
+  left: 4px;
+  height: 200px;
+  width: 87px;
+}
+.profile-card .lastname {
+  position: relative;
+  top: 45px;
+  left: -84px;
+  height: 54px;
+  width: 230px;
+}
+
+.vitals {
+  position: relative;
+  left: 186px;
+  top: -182px;
+  width: 322px;
+  height: 183px;
+
+  border-radius: 4px 4px 4px 4px;
+}
+
+label {
+  display: flex;
+  margin: 2px;
+}
+
+textarea#reason {
+  position: relative;
+  top: -347px;
+  left: 221px;
+  width: 222px;
+  height: 230px;
+}
+
+.schedule {
+  position: relative;
+  display: flex;
+  top: -231px;
+  border: 5px;
+  left: 29px;
+  width: 118px;
+  padding: 6px;
+}
+
+#labelreason {
+  position: relative;
+  bottom: 0px;
+  top: -347px;
+  left: 234px;
+}
+
+#drName {
+  position: absolute;
+  top: 57px;
+}
+
+#strName {
+  position: absolute;
+  top: 74px;
+  left: 15px;
+  /* bottom: 0px; */
+  /* right: 0px; */
+}
+
+#ctyName {
+  position: absolute;
+  top: 92px;
+  left: 17px;
+  /* bottom: 0px; */
+  /* right: 0px; */
+}
+
+#stName {
+  position: absolute;
+  top: 92px;
+  left: 111px;
+  /* bottom: 0px; */
+  /* right: 0px; */
+}
+
+#zipNum {
+  position: absolute;
+  top: 92px;
+  left: 140px;
+  /* bottom: 0px; */
+  /* right: 0px; */
+}
+
+#phoneNum {
+  position: absolute;
+  top: 112px;
+  left: 16px;
+  /* bottom: 0px; */
+  /* right: 0px; */
+}
+
+#apptDate {
+  position: absolute;
+  top: 169px;
+  left: 65px;
+  /* bottom: 0px; */
+  /* right: 0px; */
+}
+
+#apptTime {
+  position: absolute;
+  top: 198px;
+  left: 91px;
+  /* bottom: 0px; */
+  /* right: 0px; */
+}
+
+#rsntxt {
+  position: absolute;
+  top: 249px;
+  left: 7px;
+  margin-right: 7px;
+}
+
+.displaybox {
+  word-break: break-all;
+}
+
+.vitalstitle {
+  position: relative;
+  left: 83%;
+  top: 0px;
+}
+
+.bp {
+  background-color: whitesmoke;
+  width: 147px;
+  height: 154px;
+  position: relative;
+  left: 7px;
+  top: -26px;
+}
+
+.pulse {
+  background-color: whitesmoke;
+  width: 147px;
+  height: 154px;
+  position: relative;
+  left: 169px;
+  top: -319px;
+}
+
+.hearticon,
+.pulseicon {
+  position: relative;
+  font-size: 40px;
+}
+
+.hearticon {
+  color: red;
+  left: 58px;
+  top: 34px;
+}
+
+.pulseicon {
+  color: blue;
+  left: 52px;
+  top: 34px;
+}
+
+.bp-para,
+.bp-h2 {
+  position: relative;
+}
+
+.bp-para {
+  top: 81px;
+  left: 20px;
+}
+.bp-h2 {
+  top: 16px;
+  left: 41px;
+}
+
+.pulse-paraname,
+.pulse-h2,
+.pulse-parabpm {
+  position: relative;
+}
+
+.pulse-paraname {
+  top: 80px;
+  left: 44px;
+}
+
+.pulse-h2 {
+  top: 14px;
+  left: 44px;
+}
+
+.pulse-parabpm {
+  top: -26px;
+  left: 68px;
+}
+
+.pcp {
+  position: relative;
+  margin-top: 48px;
+  background-color: whitesmoke;
+  width: 38%;
+  height: 242px;
+
+  top: -213px;
+  left: 6px;
+  padding-bottom: 12px;
+  border-radius: 4px 4px 4px 4px;
+}
+
+.physiciantitle {
+  position: relative;
+  margin-left: 11px;
+  top: 10px;
+}
+
+.line1 {
+  position: relative;
+  right: -2%;
+  width: 310px;
+  top: -20px;
+}
+.line2 {
+  left: 0px;
+}
+
+.line3 {
+  position: relative;
+  left: 1px;
+  top: -19px;
+}
+
+.labs {
+  display: block;
+  background-color: whitesmoke;
+  position: relative;
+  left: 554px;
+  top: -466px;
+  width: 446px;
+  height: 256px;
+  border-radius: 4px 4px 4px 4px;
+}
+
+.labstitle {
+  position: relative;
+  top: 13px;
+  left: 13px;
+}
+
+.ellipsis {
+  position: relative;
+  left: 95%;
+  top: -25px;
+}
+
+.labnotes {
+  position: relative;
+  left: 6px;
+  top: -3px;
+}
+
+.labdr {
+  position: relative;
+  left: 29px;
+  top: -22px;
+}
+.labdate {
+  position: relative;
+  left: 355px;
+  top: -45px;
+}
+
+.labresult span,
+.labresult p {
+  margin: 0px;
+}
+
+.allergies {
+  position: relative;
+  left: 400px;
+  top: -723px;
+  background-color: whitesmoke;
+  width: 143px;
+  height: 256px;
+  border-radius: 6px 6px 6px 6px;
+}
+
+.allergytitle {
+  position: relative;
+  top: 11px;
+  left: 12px;
+}
+
+.directions {
+  width: 339px;
+  height: 49px;
+}
