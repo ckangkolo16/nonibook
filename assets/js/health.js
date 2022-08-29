@@ -32,13 +32,6 @@ schedule.addEventListener("click", function () {
     div3.appendChild(div4);
     div3.appendChild(div5);
 
-    div4.appendChild(hTag);
-    div4.appendChild(pPhone);
-
-    div5.appendChild(pTime);
-    div5.appendChild(pDate);
-    div5.appendChild(pDate2);
-
     mainapptDis.appendChild(div3);
     appDisplay.appendChild(div);
     appDisplay.appendChild(div2);
@@ -47,6 +40,7 @@ schedule.addEventListener("click", function () {
     let hTag = document.createElement("h2");
     appDisplay.appendChild(hTag);
     hTag.innerHTML = drName.value;
+    div4.appendChild(hTag);
 
     let pAddress = document.createElement("p");
     pAddress.innerHTML = address.value;
@@ -68,6 +62,8 @@ schedule.addEventListener("click", function () {
     pPhone.innerHTML = phone.value;
     appDisplay.appendChild(pPhone);
 
+    div4.appendChild(pPhone);
+
     let pDate = document.createElement("h4");
     let pDate2 = document.createElement("h4");
     pDate.innerHTML = moment(getSched.dte, "YYYY/MM/DD").format("dddd");
@@ -75,6 +71,10 @@ schedule.addEventListener("click", function () {
     pDate2.innerHTML = moment(getSched.dte, "YYYY/MM/DD").format(
       "  MMMM D" + "," + " " + "Y"
     );
+
+    div5.appendChild(pTime);
+    div5.appendChild(pDate);
+    div5.appendChild(pDate2);
 
     let pTime = document.createElement("h4");
     pTime.innerHTML = moment(getSched.dte, "YYYY/MM/DD").format("h:mm:ss a");

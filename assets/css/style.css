@@ -1,5 +1,5 @@
 body {
-  background-image: url(/assets/images/IMG_8882.JPG);
+  background-image: url(./assets/images/IMG_8882.JPG);
   background-repeat: no-repeat;
   background-size: top;
 }
@@ -210,7 +210,7 @@ nav ul li:hover {
 /* BACKGROUND PICTURE DISPLAY */
 .display1 {
   position: relative;
-  background-image: url(/assets/images/IMG_8882.JPG);
+  background-image: url(./assets/images/IMG_8882.JPG);
   margin-top: 70px;
   background-position: top;
   background-repeat: no-repeat;
@@ -231,7 +231,7 @@ nav ul li:hover {
 .display2 {
   position: relative;
   top: -168px;
-  background-image: url(/assets/images/IMG_8884.JPG);
+  background-image: url(./assets/images/IMG_8884.JPG);
   margin-top: 70px;
   background-position: top;
   background-repeat: no-repeat;
